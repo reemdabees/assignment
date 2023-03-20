@@ -1,0 +1,21 @@
+package navigate;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class Navigate_web {
+	
+	  public static void main (String[] args ) {
+		System.setProperty("webdriver.chromedriver","c:\\chromedriver.exe");
+		WebDriver =new ChromeDriver();
+		driver.get("https://subscribe.stctv.com/");
+		
+		driver.findElement(By.id("arrow")).click();
+		driver.findElement(By.id("Kuwait")).click();
+		driver.findElement(By.id("SA")).click();
+		driver.findElement(By.id("Bahrain")).click();
+		driver.findElement(By.id("name-لايت")).click();
+		driver.findElement(By.id("name-الأساسية")).click();
+		driver.findElement(By.id("name-بريميوم")).click();
+		
+	}
+
+}
